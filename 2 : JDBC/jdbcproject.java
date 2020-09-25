@@ -34,9 +34,9 @@ public class jdbcproject {
             try ( //Establishing Connection
                     Connection conn = DriverManager.getConnection(sql_url, username, password)) {
                 if(conn==null){
-                    System.out.println("Connection Established ");
-                }else{
                     System.out.println("Connection FAILED ");
+                }else{
+                     System.out.println("Connection Established ");
                 }       //Execute Query
                 Statement stmt=conn.createStatement();
                 //Query
